@@ -1,12 +1,7 @@
-<!doctype html>
-<html>
+{% extends "layout.html" %}
 
-<head>
-    <title>Howdy!</title>
-</head>
+{% block title %}Howdy! | {{ super() }}{% endblock %}
 
-<body>
-    <h1>Hello from {{ name }}!</h1>
-</body>
-
-</html>
+{% block content %}
+<h1>Hello from {{ name }}!</h1>
+{% endblock %}
