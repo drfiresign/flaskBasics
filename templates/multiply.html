@@ -1,7 +1,7 @@
 {% extends 'index.html' %}
 
-{% block title %}Multipication! | Flask Basics{% endblock %}
+{% block title %}Multipication! | {{ super() }}{% endblock %}
 
 {% block content %}
-<h1>{{ num1 }} * {{ num2 }} = {{ num1 * num2}}</h1>
+<h1>{{ num1 }} * {{ num2 }} = {{ num1 * num2 }}</h1>
 {% endblock %}
